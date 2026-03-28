@@ -145,34 +145,41 @@ export function DesktopNavItem({
 
 function MegaDropdown({ item }: { item: NavGroup }) {
   return (
-    <div className="grid grid-cols-4 gap-6">
-      {item.children.map((category) => (
-        <div key={category.label} className="min-w-0">
-          <Link
-            href={category.href}
-            className="block text-sm font-semibold text-primary mb-2 hover:underline focus-visible:underline focus-visible:ring-2 focus-visible:ring-ring"
-          >
-            {category.label}
-          </Link>
-          {category.description && (
-            <p className="text-xs text-muted-foreground mb-2">{category.description}</p>
-          )}
-          {category.children && (
-            <ul className="space-y-1">
-              {category.children.map((child) => (
-                <li key={child.href}>
-                  <Link
-                    href={child.href}
-                    className="block text-sm text-muted-foreground hover:text-primary focus-visible:text-primary focus-visible:underline transition-colors py-2"
-                  >
-                    {child.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ))}
+    <div>
+      <div className="grid grid-cols-4 gap-6">
+        {item.children.map((category) => (
+          <div key={category.label} className="min-w-0">
+            <Link
+              href={category.href}
+              className="block text-sm font-semibold text-primary mb-1.5 hover:underline focus-visible:underline focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {category.label}
+            </Link>
+            {category.children && (
+              <ul className="space-y-0.5">
+                {category.children.map((child) => (
+                  <li key={child.href}>
+                    <Link
+                      href={child.href}
+                      className="block text-sm text-muted-foreground hover:text-primary focus-visible:text-primary focus-visible:underline transition-colors py-0.5"
+                    >
+                      {child.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+      <div className="mt-4 pt-3 border-t border-border">
+        <Link
+          href={item.href ?? "/pests"}
+          className="block text-center text-sm font-medium text-primary hover:text-primary/80 hover:underline focus-visible:underline focus-visible:ring-2 focus-visible:ring-ring transition-colors"
+        >
+          View All Pests &rarr;
+        </Link>
+      </div>
     </div>
   );
 }
