@@ -1,0 +1,514 @@
+{
+  "hero-homepage": {
+    "src": "/images/heroes/hero-homepage.webp",
+    "alt": "Ridgeline pest control technician inspecting a home foundation at golden hour",
+    "width": 1920,
+    "height": 1080,
+    "category": "hero",
+    "usedOn": "homepage"
+  },
+  "hero-residential": {
+    "src": "/images/heroes/hero-residential.webp",
+    "alt": "Warm suburban Ontario home at golden hour representing residential pest protection",
+    "width": 1920,
+    "height": 1080,
+    "category": "hero",
+    "usedOn": "residential"
+  },
+  "hero-commercial": {
+    "src": "/images/heroes/hero-commercial.webp",
+    "alt": "Modern commercial building representing business pest control services",
+    "width": 1920,
+    "height": 1080,
+    "category": "hero",
+    "usedOn": "commercial, commercial/*"
+  },
+  "hero-contact": {
+    "src": "/images/heroes/hero-contact.webp",
+    "alt": "Friendly Ridgeline technician ready to help with your pest control needs",
+    "width": 1920,
+    "height": 1080,
+    "category": "hero",
+    "usedOn": "contact, quote"
+  },
+  "category-crawlers": {
+    "src": "/images/pests/category-crawlers.webp",
+    "alt": "Crawling pests including ants, spiders, and cockroaches",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "homepage, pests, residential, crawlers"
+  },
+  "category-flyers": {
+    "src": "/images/pests/category-flyers.webp",
+    "alt": "Flying pests including wasps, moths, and flies",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "homepage, pests, residential, flyers"
+  },
+  "category-rodents": {
+    "src": "/images/pests/category-rodents.webp",
+    "alt": "House mouse representing rodent pest control services",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "homepage, pests, residential, rodents"
+  },
+  "category-wildlife": {
+    "src": "/images/pests/category-wildlife.webp",
+    "alt": "Raccoon near a suburban home representing wildlife removal services",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "homepage, pests, residential, wildlife"
+  },
+  "hero-crawlers": {
+    "src": "/images/pests/hero-crawlers.webp",
+    "alt": "Technician treating interior baseboards for crawling pest control",
+    "width": 1920,
+    "height": 800,
+    "category": "hero",
+    "usedOn": "crawlers"
+  },
+  "hero-flyers": {
+    "src": "/images/pests/hero-flyers.webp",
+    "alt": "Technician treating exterior eaves for flying pest control",
+    "width": 1920,
+    "height": 800,
+    "category": "hero",
+    "usedOn": "flyers"
+  },
+  "hero-rodents": {
+    "src": "/images/pests/hero-rodents.webp",
+    "alt": "Technician sealing foundation entry points for rodent exclusion",
+    "width": 1920,
+    "height": 800,
+    "category": "hero",
+    "usedOn": "rodents"
+  },
+  "hero-wildlife": {
+    "src": "/images/pests/hero-wildlife.webp",
+    "alt": "Technician inspecting roof soffit for humane wildlife exclusion",
+    "width": 1920,
+    "height": 800,
+    "category": "hero",
+    "usedOn": "wildlife"
+  },
+  "promo-banner": {
+    "src": "/images/heroes/promo-banner.webp",
+    "alt": "Ridgeline Pest Defence neighbour rate promotional offer",
+    "width": 1200,
+    "height": 400,
+    "category": "hero",
+    "usedOn": "homepage, contact"
+  },
+  "tech-service": {
+    "src": "/images/service/tech-service.webp",
+    "alt": "Ridgeline technician performing eco-friendly pest treatment in a home",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "homepage, residential, about"
+  },
+  "tech-inspection": {
+    "src": "/images/service/tech-inspection.webp",
+    "alt": "Ridgeline technician conducting a 47-point property inspection",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "homepage, quote, residential"
+  },
+  "pest-ants": {
+    "src": "/images/pests/pest-ants.webp",
+    "alt": "Carpenter ant macro photograph showing mandibles and antennae detail",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "ants, crawlers, homepage"
+  },
+  "pest-spiders": {
+    "src": "/images/pests/pest-spiders.webp",
+    "alt": "Garden spider on web with detailed view of eyes and legs",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "spiders, crawlers"
+  },
+  "pest-cockroaches": {
+    "src": "/images/pests/pest-cockroaches.webp",
+    "alt": "German cockroach on kitchen surface for pest identification",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "cockroaches, crawlers, commercial"
+  },
+  "pest-bed-bugs": {
+    "src": "/images/pests/pest-bed-bugs.webp",
+    "alt": "Bed bug on mattress seam for identification reference",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "bed-bugs, crawlers"
+  },
+  "pest-centipedes": {
+    "src": "/images/pests/pest-centipedes.webp",
+    "alt": "House centipede on wall showing characteristic long legs",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "centipedes, crawlers"
+  },
+  "pest-silverfish": {
+    "src": "/images/pests/pest-silverfish.webp",
+    "alt": "Silverfish on paper showing characteristic silvery scales",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "silverfish, crawlers"
+  },
+  "pest-fleas": {
+    "src": "/images/pests/pest-fleas.webp",
+    "alt": "Flea on fabric showing powerful jumping legs",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "fleas, crawlers"
+  },
+  "pest-flies": {
+    "src": "/images/pests/pest-flies.webp",
+    "alt": "House fly macro showing compound eyes and wing detail",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "flies, flyers"
+  },
+  "pest-mosquitoes": {
+    "src": "/images/pests/pest-mosquitoes.webp",
+    "alt": "Mosquito with visible proboscis for pest identification",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "mosquitoes, flyers"
+  },
+  "pest-wasps-hornets": {
+    "src": "/images/pests/pest-wasps-hornets.webp",
+    "alt": "Yellow jacket wasp on nest showing distinctive stripe pattern",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "wasps-hornets, flyers"
+  },
+  "pest-moths": {
+    "src": "/images/pests/pest-moths.webp",
+    "alt": "Pantry moth with spread wings for pest identification",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "moths, flyers"
+  },
+  "pest-beetles": {
+    "src": "/images/pests/pest-beetles.webp",
+    "alt": "Carpet beetle showing patterned shell on fabric",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "beetles, flyers"
+  },
+  "pest-boxelder-bugs": {
+    "src": "/images/pests/pest-boxelder-bugs.webp",
+    "alt": "Boxelder bugs clustered on window sill showing red and black markings",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "boxelder-bugs, flyers"
+  },
+  "pest-ladybugs": {
+    "src": "/images/pests/pest-ladybugs.webp",
+    "alt": "Asian lady beetles clustered on window frame in autumn",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "lady-bugs, flyers"
+  },
+  "pest-mice": {
+    "src": "/images/pests/pest-mice.webp",
+    "alt": "House mouse emerging from baseboard gap in a home",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "mice, rodents, homepage"
+  },
+  "pest-mice-detail": {
+    "src": "/images/pests/pest-mice-detail.webp",
+    "alt": "Mouse near food packaging showing signs of gnaw damage",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "mice"
+  },
+  "pest-rats": {
+    "src": "/images/pests/pest-rats.webp",
+    "alt": "Norway rat near residential foundation showing common urban pest",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "rats, homepage (seasonal)"
+  },
+  "pest-rats-norway": {
+    "src": "/images/pests/pest-rats-norway.webp",
+    "alt": "Norway rat in basement showing characteristic brown fur and long tail",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "rats, rodents"
+  },
+  "pest-rats-roof": {
+    "src": "/images/pests/pest-rats-roof.webp",
+    "alt": "Roof rat on fence top at dusk showing darker colouring",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "rats"
+  },
+  "pest-rats-detail": {
+    "src": "/images/pests/pest-rats-detail.webp",
+    "alt": "Rat near foundation gap showing common entry point",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "rats"
+  },
+  "pest-voles": {
+    "src": "/images/pests/pest-voles.webp",
+    "alt": "Vole in garden lawn showing characteristic tunneling behaviour",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "voles, rodents"
+  },
+  "rodent-alert-banner": {
+    "src": "/images/pests/rodent-alert-banner.webp",
+    "alt": "Seasonal alert: mice and rats seek shelter in homes during winter",
+    "width": 1200,
+    "height": 400,
+    "category": "seasonal",
+    "usedOn": "homepage, rodents"
+  },
+  "tech-rodent": {
+    "src": "/images/service/tech-rodent.webp",
+    "alt": "Technician placing professional rodent trap station in garage",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "rodents, mice, rats"
+  },
+  "pest-wildlife": {
+    "src": "/images/pests/category-wildlife.webp",
+    "alt": "Wildlife pest requiring humane removal services",
+    "width": 800,
+    "height": 600,
+    "category": "pest",
+    "usedOn": "wildlife, homepage (seasonal)"
+  },
+  "pest-raccoons": {
+    "src": "/images/pests/pest-raccoons.webp",
+    "alt": "Raccoon on residential rooftop near chimney at twilight",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "raccoons, wildlife, homepage"
+  },
+  "pest-squirrels": {
+    "src": "/images/pests/pest-squirrels.webp",
+    "alt": "Grey squirrel investigating soffit vent on a home exterior",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "squirrels, wildlife"
+  },
+  "pest-skunks": {
+    "src": "/images/pests/pest-skunks.webp",
+    "alt": "Striped skunk near suburban deck in residential backyard",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "skunks, wildlife"
+  },
+  "pest-bats": {
+    "src": "/images/pests/pest-bats.webp",
+    "alt": "Brown bat roosting under residential eave",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "bats, wildlife"
+  },
+  "pest-moles": {
+    "src": "/images/pests/pest-moles.webp",
+    "alt": "Mole emerging from lawn tunnel showing digging paws",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "moles, wildlife"
+  },
+  "pest-birds": {
+    "src": "/images/pests/pest-birds.webp",
+    "alt": "Birds nesting in residential dryer vent causing blockage",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "birds, wildlife"
+  },
+  "pest-opossums": {
+    "src": "/images/pests/pest-opossums.webp",
+    "alt": "Opossum near residential shed at night",
+    "width": 800,
+    "height": 800,
+    "category": "pest",
+    "usedOn": "opossums, wildlife"
+  },
+  "commercial-restaurant": {
+    "src": "/images/commercial/commercial-restaurant.webp",
+    "alt": "Commercial restaurant kitchen requiring pest control compliance",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/restaurant"
+  },
+  "commercial-office": {
+    "src": "/images/commercial/commercial-office.webp",
+    "alt": "Modern office building interior for commercial pest management",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/office"
+  },
+  "commercial-warehouse": {
+    "src": "/images/commercial/commercial-warehouse.webp",
+    "alt": "Warehouse interior where rodent and pest monitoring is critical",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/warehouse"
+  },
+  "commercial-healthcare": {
+    "src": "/images/commercial/commercial-healthcare.webp",
+    "alt": "Healthcare facility corridor requiring sterile pest management",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/healthcare"
+  },
+  "commercial-ants": {
+    "src": "/images/commercial/commercial-ants.webp",
+    "alt": "Ant trail in commercial kitchen highlighting food safety risk",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/ant-control"
+  },
+  "commercial-cockroach": {
+    "src": "/images/commercial/commercial-cockroach.webp",
+    "alt": "Cockroach near commercial kitchen drain requiring immediate treatment",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/cockroach-control"
+  },
+  "commercial-rodent": {
+    "src": "/images/commercial/commercial-rodent.webp",
+    "alt": "Professional rodent bait station in commercial warehouse setting",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial/rodent-control"
+  },
+  "seasonal-fall": {
+    "src": "/images/seasonal/seasonal-fall.webp",
+    "alt": "Autumn scene when wildlife seeks shelter in homes before winter",
+    "width": 1200,
+    "height": 400,
+    "category": "seasonal",
+    "usedOn": "homepage (seasonal section)"
+  },
+  "seasonal-summer": {
+    "src": "/images/seasonal/seasonal-summer.webp",
+    "alt": "Summer scene when wasp and flying pest activity peaks",
+    "width": 1200,
+    "height": 400,
+    "category": "seasonal",
+    "usedOn": "homepage (seasonal section)"
+  },
+  "tech-exclusion": {
+    "src": "/images/service/tech-exclusion.webp",
+    "alt": "Technician sealing home entry point with steel mesh for pest exclusion",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "homepage, residential"
+  },
+  "tech-report": {
+    "src": "/images/service/tech-report.webp",
+    "alt": "Technician reviewing property health report with homeowner",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "homepage, quote"
+  },
+  "tech-flyer": {
+    "src": "/images/service/tech-flyer.webp",
+    "alt": "Technician safely removing wasp nest with protective equipment",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "flyers, wasps-hornets"
+  },
+  "attic-before": {
+    "src": "/images/service/attic-before.webp",
+    "alt": "Attic contaminated by pest activity requiring restoration",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "homepage (attic restoration)"
+  },
+  "attic-after": {
+    "src": "/images/service/attic-after.webp",
+    "alt": "Restored attic with fresh insulation after professional cleanup",
+    "width": 800,
+    "height": 600,
+    "category": "service",
+    "usedOn": "homepage (attic restoration)"
+  },
+  "seasonal-winter": {
+    "src": "/images/seasonal/seasonal-winter.webp",
+    "alt": "Winter scene showing mouse tracks leading to home foundation",
+    "width": 1200,
+    "height": 400,
+    "category": "seasonal",
+    "usedOn": "homepage (seasonal section)"
+  },
+  "seasonal-spring": {
+    "src": "/images/seasonal/seasonal-spring.webp",
+    "alt": "Spring garden scene when ant and pest activity increases",
+    "width": 1200,
+    "height": 400,
+    "category": "seasonal",
+    "usedOn": "homepage (seasonal section)"
+  },
+  "og-default": {
+    "src": "/images/og/og-default.webp",
+    "alt": "Ridgeline Pest Defence \u2014 Quiet Homes, Confident Owners",
+    "width": 1200,
+    "height": 630,
+    "category": "brand",
+    "usedOn": "all pages (og:image fallback)"
+  },
+  "commercial-retail": {
+    "src": "/images/commercial/commercial-retail.webp",
+    "alt": "Retail store interior requiring ongoing pest monitoring",
+    "width": 800,
+    "height": 600,
+    "category": "commercial",
+    "usedOn": "commercial"
+  }
+}

@@ -1,0 +1,289 @@
+@import "tailwindcss";
+
+/* ── Tailwind v4 Theme ─────────────────────────────────────── */
+@theme {
+  /* Colors — Light (default) */
+  --color-primary: #295C45;
+  --color-primary-foreground: #F9F7F3;
+  --color-secondary: #4E5463;
+  --color-secondary-foreground: #F9F7F3;
+  --color-accent: #946A1B;
+  --color-accent-foreground: #F9F7F3;
+  --color-background: #F9F7F3;
+  --color-foreground: #262B2E;
+  --color-muted: #D9E2DD;
+  --color-muted-foreground: #4A514E;
+  --color-destructive: #B5361E;
+  --color-destructive-foreground: #F9F7F3;
+  --color-border: #CDD6D1;
+  --color-input: #C2CCC6;
+  --color-ring: #295C45;
+  --color-card: #FCFBF9;
+  --color-card-foreground: #262B2E;
+  --color-footer: #1a1f25;
+  --color-footer-foreground: #e8e3db;
+
+  /* Fonts */
+  --font-heading: "DM Serif Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Radius */
+  --radius-default: 0.625rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+
+  /* Animation */
+  --animate-fade-in: fade-in 0.5s ease-out forwards;
+  --animate-offset-sm: 12px;
+  --animate-offset-md: 24px;
+}
+
+/* ── Dark mode override ────────────────────────────────────── */
+@variant dark (&:is(.dark *));
+
+/* ── Utilities ─────────────────────────────────────────────── */
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+}
+
+@layer base {
+  .dark {
+    --color-primary: #3D8B67;
+    --color-primary-foreground: #F9F7F3;
+    --color-secondary: #8A90A0;
+    --color-secondary-foreground: #F9F7F3;
+    --color-accent: #C48B2E;
+    --color-accent-foreground: #141516;
+    --color-background: #161A1C;
+    --color-foreground: #E8E3DB;
+    --color-muted: #252A2D;
+    --color-muted-foreground: #B0B8B5;
+    --color-destructive: #DC5944;
+    --color-destructive-foreground: #F9F7F3;
+    --color-border: #2D3337;
+    --color-input: #333A3E;
+    --color-ring: #3D8B67;
+    --color-card: #1C2123;
+    --color-card-foreground: #E8E3DB;
+    --color-footer: #0d1117;
+    --color-footer-foreground: #d4cfc5;
+
+    /* Dark mode shadow overrides with higher opacity */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+  }
+}
+
+/* ── Keyframes ─────────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* ── Base ──────────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+  }
+
+  h1, h2 {
+    font-family: var(--font-heading);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.375;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  .skip-link:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 1rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 9999;
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
+
+/* ── Reusable section utilities ────────────────────────────── */
+
+/* ── Reusable utilities ────────────────────────────────────── */
+@layer utilities {
+  /* Hero styles */
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80;
+  }
+
+  .hero-vignette {
+    background: radial-gradient(ellipse at top right, transparent 40%, rgba(0,0,0,0.3) 100%);
+  }
+
+  /* Section container pattern */
+  .section-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  /* Eyebrow text pattern */
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-wider text-accent mb-3;
+  }
+
+  .eyebrow-light {
+    @apply text-sm font-semibold uppercase tracking-wider text-accent-foreground mb-3;
+  }
+
+  /* Icon circle pattern */
+  .icon-circle-sm {
+    @apply flex items-center justify-center rounded-full bg-primary/10 text-primary w-8 h-8;
+  }
+
+  .icon-circle-md {
+    @apply flex items-center justify-center rounded-full bg-primary/10 text-primary w-12 h-12;
+  }
+
+  .icon-circle-lg {
+    @apply flex items-center justify-center rounded-full bg-primary/10 text-primary w-16 h-16;
+  }
+
+  /* Pattern utilities */
+  .dot-pattern {
+    background-image: radial-gradient(circle at 20% 50%, white 1px, transparent 1px);
+    background-size: 2.5rem 2.5rem;
+  }
+}
+
+/* ── Page enter animation ──────────────────────────────────── */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(var(--animate-offset-sm)); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-page-enter {
+  animation: page-enter 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+
+/* ── ScrollReveal shared transition (uses CSS custom property for delay) ── */
+.scroll-reveal-animated {
+  transition: opacity 0.5s ease-out var(--reveal-delay, 0s), transform 0.5s ease-out var(--reveal-delay, 0s);
+}
+
+/* ── CSS containment for below-fold sections ──────────────── */
+/* content-visibility:auto removed — it hides below-fold content from the
+   accessibility tree until rendered, causing screen readers to skip sections.
+   ScrollReveal + Next.js lazy loading handle performance instead. */
+.section-deferred,
+.section-deferred-sm,
+.section-deferred-md,
+.section-deferred-lg {
+  /* intentionally empty — classes kept to avoid breaking templates */
+}
+
+/* ── Focus ring on dark backgrounds ────────────────────────── */
+@layer components {
+  .bg-primary :focus-visible,
+  [data-dark-bg] :focus-visible {
+    outline-color: white;
+  }
+}
+
+/* ── High contrast preference ─────────────────────────────── */
+@media (prefers-contrast: more) {
+  :root {
+    --color-muted-foreground: #3A413E;
+    --color-border: #8A938D;
+  }
+
+  .dark {
+    --color-muted-foreground: #D0D8D5;
+    --color-border: #5A6367;
+  }
+
+  /* Remove text opacity modifiers for readability */
+  [class*="text-"][class*="/"] {
+    --tw-text-opacity: 1 !important;
+  }
+
+  /* Thicken focus rings */
+  :focus-visible {
+    outline-width: 3px;
+  }
+}
+
+/* ── Reduced motion ────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable decorative animations */
+  .animate-fade-in,
+  .animate-page-enter,
+  [data-framer-appear] {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  /* Keep functional layout transitions (accordion, mobile nav) at reduced speed */
+  [aria-expanded],
+  [role="dialog"] {
+    transition-duration: 150ms !important;
+  }
+}
