@@ -15,7 +15,8 @@ import { FAQ } from "@/components/sections/FAQ";
 import { ServiceCTA } from "@/components/sections/ServiceCTA";
 import { allLocations, getLocationBySlug } from "@/content/locations/data";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
   return allLocations.map((loc) => ({ city: loc.slug }));

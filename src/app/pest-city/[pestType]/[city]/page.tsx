@@ -10,10 +10,13 @@ import { getPestCityData, getAllPestCityRoutes } from "@/content/pest-city/data"
 import { getPestImage } from "@/lib/images";
 import { JsonLd } from "@/components/ui/JsonLd";
 
-export const dynamicParams = false;
+// ISR: generate top pages at build, rest on-demand (cached for 1 hour)
+export const dynamicParams = true;
+export const revalidate = 3600;
 
 export function generateStaticParams() {
-  return getAllPestCityRoutes().map((r) => ({
+  // Only pre-build the top 20 pest-city combos to keep build fast
+  return getAllPestCityRoutes().slice(0, 20).map((r) => ({
     pestType: r.pestType,
     city: r.citySlug,
   }));
