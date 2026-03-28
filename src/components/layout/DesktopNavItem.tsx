@@ -119,9 +119,13 @@ export function DesktopNavItem({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 8 }}
             transition={{ duration: 0.2 }}
-            className={`absolute top-full left-0 pt-2 ${
-              item.megaMenu ? "w-full max-w-2xl lg:max-w-3xl -left-20" : "w-64"
+            className={`pt-2 ${
+              item.megaMenu
+                ? "absolute top-full -left-[300px] w-[800px]"
+                : "absolute top-full left-0 w-64"
             }`}
+            onMouseEnter={onOpen}
+            onMouseLeave={onClose}
           >
             <div className="rounded-lg bg-card shadow-lg border border-border p-4" onKeyDown={handleDropdownKeyDown}>
               {item.megaMenu ? (
@@ -141,9 +145,9 @@ export function DesktopNavItem({
 
 function MegaDropdown({ item }: { item: NavGroup }) {
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 gap-6">
       {item.children.map((category) => (
-        <div key={category.label}>
+        <div key={category.label} className="min-w-0">
           <Link
             href={category.href}
             className="block text-sm font-semibold text-primary mb-2 hover:underline focus-visible:underline focus-visible:ring-2 focus-visible:ring-ring"
